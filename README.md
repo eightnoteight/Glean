@@ -27,14 +27,15 @@ print repr(raw_input())
 print repr(raw_input())
 ```
 ###output:
+```
 'hello world!'
 'hello world!'
-
+```
 
 ## cpp/c files
 The lines between '/\*input' and '\*/' will be sent as stdin to a.out
 
-###example python file
+###example c++ file
 ```
 #include <bits/stdc++.h>
 using namespace std;
@@ -48,9 +49,9 @@ int main(int argc, char** argv)
     cout << str;
 return 0;
 }
-print repr(raw_input())
-print repr(raw_input())
 ```
 
 ###output:
+```
 hello input!
+```
