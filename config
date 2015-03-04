@@ -1,0 +1,27 @@
+[python]
+start = '''input
+# new line after start
+newline = True
+end = '''
+cmd = python {codef:s} < {filepath:s}
+
+[python3]
+start = '''input
+# new line after start
+newline = True
+end = '''
+cmd = python3 {codef:s} < {filepath:s}
+
+[cpp]
+start = /*input
+# new line after start
+newline = True
+end = */
+cmd = g++ {codef:s} -O /tmp/a.out && /tmp/a.out < {filepath:s}
+
+[c]
+start = /*input
+# new line after start
+newline = True
+end = */
+cmd = gcc {codef:s} -O /tmp/a.out && /tmp/a.out < {filepath:s}
